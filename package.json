@@ -1,0 +1,26 @@
+{
+  "name": "domnode",
+  "version": "1.0.0",
+  "description": "A better project for dom!",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackDan9/domNode.git"
+  },
+  "keywords": [
+    "node",
+    "dom"
+  ],
+  "author": "jackdan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JackDan9/domNode/issues"
+  },
+  "homepage": "https://github.com/JackDan9/domNode#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2"
+  }
+}
