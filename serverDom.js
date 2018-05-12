@@ -51,12 +51,17 @@ io.sockets.on('connection', function () {
                 })
                 res.on('end', function() {
                     let $ = cheerio.load(html); // JQuery Style
-                    let slideList = $('#foucsSlideList');
+                    let slideList = $('body');
                     let slideListData = [];
-                    slideList.find('li').each(function (item) {
+                    slideList.find('div').each(function (item) {
                         let pic = $(this);
+
                         // console.log(pic)
+                        // console.log(pic.attr())
+                        console.log(pic.attr())
                         let pic_href = pic.find('a').attr('href');
+                        // let pic_href = pic.find('a');
+                        // console.log(pic_href.name);
                         slideListData.push({
                             pic_href: pic_href
                         })
